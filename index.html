@@ -6,13 +6,14 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
    <title>Moleen App</title>
   </head>
   <body>
     <div class="weather-app">
     <header>
-      <form class="search-form">
-        <input type = "search" placeholder="enter a city...." required class="search-form-input"/>
+      <form class="search-form" id="search-form">
+        <input type = "search" placeholder="enter a city...." required id="search-form-input" class="search-form-input"/>
         <input type="submit" value="Search" class="search-form-button"/>
       </form>
     </header>
@@ -20,7 +21,7 @@
     <main>
       <div class="weather-app-data">
       <div>
-    <h1 class="weather-app-city">Paris</h1>
+    <h1 class="weather-app-city" id="weather-app-city"></h1>
     <p class="weather-app-details">
     Today 14:43, scattered clouds
       <br>
@@ -30,14 +31,12 @@
 <div class="weather-app-temperature-container">
   
  <div class="weather-app-icon"> 🌤️</div>
-  <div class="weather-app-temperature">18</div>
+  <div class="weather-app-temperature" id="temperature"></div>
   <div class="weather-app-unit">°C</div>
 
 </div>
 </div>
   </main>
-
-
 
     <footer>This Project was Coded by <a href="https://github.com/dashboard" target="_blank">Moleen Dhadhaya </a>and is hosted <a href="https://github.com/DHADHAYA/moleen/blob/main/index.html" target="_blank"> on Github</a> website is hosted<a href="https://moleen.netlify.app" target="_blank"> on netlify</a>
     </footer>
@@ -47,5 +46,5 @@
   </body>
 
 </html>
-s
+
 
